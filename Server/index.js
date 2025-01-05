@@ -13,6 +13,8 @@ app.use(
 app.use(ping_pong);
 app.use(api);
 
+app.use('/HI',(req, res) => res.send('Hello from server 1'));
+
 app.use((req, res) => res.send('Hello from server 1'));
 
 const PORT = process.env.PORT || 3000;
